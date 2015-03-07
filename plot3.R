@@ -19,5 +19,4 @@ plot3 <- function(){
     dev.copy(png, file="plot3.png", height=576, width=576,units='px')
     dev.off()
     
-    dataplot
 }
