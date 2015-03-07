@@ -16,9 +16,6 @@ plot4 <- function(){
     })
     legend("topright",col=c("black","red","blue"),lty=1,lwd=1,c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
     plot(dataplot$newDate,dataplot$Global_reactive_power,ylab="Global_reactive_power",type="l",xlab=" ")
-    dev.copy(png, file="plot4.png", height=480, width=480,units='px')
-    dev.off()
-    dataplot
 
    
     
