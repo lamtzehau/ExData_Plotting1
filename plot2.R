@@ -8,7 +8,8 @@ plot2 <- function(){
     par(mfrow=c(1,1))
     plot(dataplot$newDate,dataplot$Global_active_power,ylab="Global Active Power (killowatts)",type="l",xlab=" ")
     
+    #copy plot to a a png file
     dev.copy(png, file="plot2.png", height=480, width=480,units='px')
     dev.off()
-    dataplot
+   
 }
