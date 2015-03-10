@@ -4,7 +4,9 @@ plot1 <- function(){
                    stringsAsFactors=FALSE, na.strings="?")
     dataplot<- subset(df, df$Date=="1/2/2007"|df$Date=="2/2/2007") 
     #file to store the plot   
-    jpeg('plot1.jpg',width=480,height=480,units='px')
+    jpeg('plot1.jpg',width=480,height=480,units='px') # shoudl output as png file
+    png("plot1.png", width = 480, height=480, units = "px")
+    
     par(mfrow=c(1,1))
     hist(dataplot$Global_active_power,main="Global Active Power (killowatts)",xlab="Global Active Power",col="red")
     
